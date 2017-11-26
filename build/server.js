@@ -1370,55 +1370,7 @@ module.exports =
     return _react2.default.createElement(
       'div',
       { id: 'wrapper', className: 'content' },
-      _react2.default.createElement(
-        _Navbar2.default,
-        { fluid: true, style: { margin: 0 } },
-        _react2.default.createElement(
-          'div',
-          { className: 'page-heading' },
-          _react2.default.createElement(
-            'h2',
-            null,
-            '\u041E\u043F\u0435\u0440\u0430\u0446\u0438\u0438'
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: '#', className: 'btn btn-primary btn-rounded' },
-            '\u0412\u0430\u043B\u044E\u0442\u0430: UAH ',
-            _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'btn btn-primary btn-rounded' },
-            '\u041D\u043E\u0432\u0430\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044F + '
-          ),
-          _react2.default.createElement(
-            'form',
-            null,
-            _react2.default.createElement('input', { className: 'form-control search-form', placeholder: '\u041F\u043E\u0438\u0441\u043A', type: 'text' }),
-            _react2.default.createElement(
-              'button',
-              { type: 'submit', className: 'search-btn' },
-              _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'input-group custom-search-form search-form' },
-            _react2.default.createElement(
-              'span',
-              { className: 'input-group-btn' },
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: '\u041F\u043E\u0438\u0441\u043A' }),
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-default', type: 'button' },
-                _react2.default.createElement('i', { className: 'fa fa-search' })
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(_Sidebar2.default, null)
-      )
+      _react2.default.createElement(_Sidebar2.default, null)
     );
   }
   
@@ -20362,6 +20314,36 @@ module.exports =
     return _react2.default.createElement(
       'div',
       { className: 'wrap' },
+      _react2.default.createElement(
+        'div',
+        { className: 'page-heading' },
+        _react2.default.createElement(
+          'h2',
+          null,
+          '\u041E\u043F\u0435\u0440\u0430\u0446\u0438\u0438'
+        ),
+        _react2.default.createElement(
+          'a',
+          { href: '#', className: 'btn btn-primary btn-rounded' },
+          '\u0412\u0430\u043B\u044E\u0442\u0430: UAH ',
+          _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+        ),
+        _react2.default.createElement(
+          'button',
+          { className: 'btn btn-primary btn-rounded', 'data-toggle': 'modal', 'data-target': '#Modal' },
+          '\u041D\u043E\u0432\u0430\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044F + '
+        ),
+        _react2.default.createElement(
+          'form',
+          null,
+          _react2.default.createElement('input', { className: 'form-control search-form', placeholder: '\u041F\u043E\u0438\u0441\u043A', type: 'text' }),
+          _react2.default.createElement(
+            'button',
+            { type: 'submit', className: 'search-btn' },
+            _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
+          )
+        )
+      ),
       _react2.default.createElement(
         'div',
         { className: 'row' },
