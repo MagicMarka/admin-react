@@ -21,7 +21,7 @@ class Sidebar extends Component {
       <div className="navbar-default sidebar-left" role="navigation">
         <div className="sidebar">
             <div className="nav-profile">
-            <img alt="profile" className="rounded-circle margin-b-10 circle-border " src="https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png" width="80"/>
+            <img alt="profile" src="https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png" width="80"/>
             <p className="name">Клиент</p>
             </div>
           <ul className="nav in" id="side-menu">

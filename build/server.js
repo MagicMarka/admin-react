@@ -116,7 +116,7 @@ module.exports =
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(188);
+  var _assets = __webpack_require__(187);
   
   var _assets2 = _interopRequireDefault(_assets);
   
@@ -923,47 +923,47 @@ module.exports =
   
   var _tables2 = _interopRequireDefault(_tables);
   
-  var _buttons = __webpack_require__(159);
+  var _buttons = __webpack_require__(157);
   
   var _buttons2 = _interopRequireDefault(_buttons);
   
-  var _flotCharts = __webpack_require__(161);
+  var _flotCharts = __webpack_require__(160);
   
   var _flotCharts2 = _interopRequireDefault(_flotCharts);
   
-  var _forms = __webpack_require__(163);
+  var _forms = __webpack_require__(162);
   
   var _forms2 = _interopRequireDefault(_forms);
   
-  var _grid = __webpack_require__(168);
+  var _grid = __webpack_require__(167);
   
   var _grid2 = _interopRequireDefault(_grid);
   
-  var _icons = __webpack_require__(170);
+  var _icons = __webpack_require__(169);
   
   var _icons2 = _interopRequireDefault(_icons);
   
-  var _morrisjsCharts = __webpack_require__(172);
+  var _morrisjsCharts = __webpack_require__(171);
   
   var _morrisjsCharts2 = _interopRequireDefault(_morrisjsCharts);
   
-  var _notification = __webpack_require__(174);
+  var _notification = __webpack_require__(173);
   
   var _notification2 = _interopRequireDefault(_notification);
   
-  var _panelWells = __webpack_require__(181);
+  var _panelWells = __webpack_require__(180);
   
   var _panelWells2 = _interopRequireDefault(_panelWells);
   
-  var _typography = __webpack_require__(183);
+  var _typography = __webpack_require__(182);
   
   var _typography2 = _interopRequireDefault(_typography);
   
-  var _blank = __webpack_require__(185);
+  var _blank = __webpack_require__(184);
   
   var _blank2 = _interopRequireDefault(_blank);
   
-  var _error = __webpack_require__(187);
+  var _error = __webpack_require__(186);
   
   var _error2 = _interopRequireDefault(_error);
   
@@ -1175,10 +1175,6 @@ module.exports =
   var _App = __webpack_require__(35);
   
   var _App2 = _interopRequireDefault(_App);
-  
-  var _Header = __webpack_require__(37);
-  
-  var _Header2 = _interopRequireDefault(_Header);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1412,14 +1408,7 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var history = (0, _useQueries2.default)( false ? _createBrowserHistory2.default : _createMemoryHistory2.default)(); /**
-                                                                                                                                    * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                                                                    *
-                                                                                                                                    * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                                                                    *
-                                                                                                                                    * This source code is licensed under the MIT license found in the
-                                                                                                                                    * LICENSE.txt file in the root directory of this source tree.
-                                                                                                                                    */
+  var history = (0, _useQueries2.default)( false ? _createBrowserHistory2.default : _createMemoryHistory2.default)();
   
   exports.default = history;
 
@@ -1522,7 +1511,7 @@ module.exports =
             _react2.default.createElement(
               'div',
               { className: 'nav-profile' },
-              _react2.default.createElement('img', { alt: 'profile', className: 'rounded-circle margin-b-10 circle-border ', src: 'https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png', width: '80' }),
+              _react2.default.createElement('img', { alt: 'profile', src: 'https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png', width: '80' }),
               _react2.default.createElement(
                 'p',
                 { className: 'name' },
@@ -20267,621 +20256,725 @@ module.exports =
   'use strict';
   
   Object.defineProperty(exports, "__esModule", {
-    value: true
+      value: true
   });
+  
+  var _getPrototypeOf = __webpack_require__(29);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(30);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(31);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(32);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(33);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
   
   var _react = __webpack_require__(11);
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(150);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(151);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _Pagination = __webpack_require__(156);
-  
-  var _Pagination2 = _interopRequireDefault(_Pagination);
-  
-  var _PageHeader = __webpack_require__(157);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  var _Modal = __webpack_require__(180);
-  
-  var _Modal2 = _interopRequireDefault(_Modal);
-  
-  var _Well = __webpack_require__(158);
-  
-  var _Well2 = _interopRequireDefault(_Well);
-  
-  var _Modal3 = __webpack_require__(189);
-  
-  var _Modal4 = _interopRequireDefault(_Modal3);
+  var _reactBootstrap = __webpack_require__(38);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  function displayTable(props) {
+  var Table = function (_React$Component) {
+      (0, _inherits3.default)(Table, _React$Component);
   
-    return _react2.default.createElement(
-      'div',
-      { className: 'wrap' },
-      _react2.default.createElement(
-        'div',
-        { className: 'page-heading' },
-        _react2.default.createElement(
-          'h2',
-          null,
-          '\u041E\u043F\u0435\u0440\u0430\u0446\u0438\u0438'
-        ),
-        _react2.default.createElement(
-          'a',
-          { href: '#', className: 'btn btn-primary btn-rounded' },
-          '\u0412\u0430\u043B\u044E\u0442\u0430: UAH ',
-          _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-        ),
-        _react2.default.createElement(
-          'button',
-          { className: 'btn btn-primary btn-rounded', type: 'button', 'data-toggle': 'modal', 'data-target': '#exampleModal' },
-          '\u041D\u043E\u0432\u0430\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044F + '
-        ),
-        _react2.default.createElement(
-          'form',
-          null,
-          _react2.default.createElement('input', { className: 'form-control search-form', placeholder: '\u041F\u043E\u0438\u0441\u043A', type: 'text' }),
-          _react2.default.createElement(
-            'button',
-            { type: 'submit', className: 'search-btn' },
-            _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
-          )
-        )
-      ),
-      _react2.default.createElement(_Modal4.default, null),
-      _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
-          'div',
-          { className: 'col-md-12' },
-          _react2.default.createElement(
-            'div',
-            { className: 'row options' },
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement('input', { className: 'form-control search-options', type: 'text', placeholder: '\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435' }),
-              _react2.default.createElement(
-                'button',
-                { type: 'submit', className: 'search-btn' },
-                _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
-              )
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement('input', { className: 'form-control search-options', type: 'text', placeholder: '\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F' }),
-              _react2.default.createElement(
-                'button',
-                { type: 'submit', className: 'search-btn' },
-                _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
-              )
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement(
-                'select',
-                { className: 'form-control' },
-                _react2.default.createElement(
-                  'option',
-                  { disabled: true, selected: true },
-                  '\u0421\u0442\u0430\u0442\u0443\u0441'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '1' },
-                  '\u041F\u0440\u0438\u043D\u044F\u0442'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '2' },
-                  '\u0412 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0435'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '3' },
-                  '\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement('input', { className: 'form-control search-orders', placeholder: 'Order \u2116', type: 'text' })
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement(
-                'select',
-                { className: 'form-control' },
-                _react2.default.createElement(
-                  'option',
-                  { disabled: true, selected: true },
-                  '\u0414\u0430\u0442\u0430 \u0441'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '1' },
-                  '01.01'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '2' },
-                  '01.02'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '3' },
-                  '01.02'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'form',
-              null,
-              _react2.default.createElement(
-                'select',
-                { className: 'form-control' },
-                _react2.default.createElement(
-                  'option',
-                  { disabled: true, selected: true },
-                  '\u0414\u0430\u0442\u0430 \u043F\u043E'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '1' },
-                  '01.01'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '2' },
-                  '01.02'
-                ),
-                _react2.default.createElement(
-                  'option',
-                  { value: '3' },
-                  '01.02'
-                )
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'table',
-        { className: 'table table-striped' },
-        _react2.default.createElement(
-          'thead',
-          null,
-          _react2.default.createElement(
-            'tr',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Order \u2116'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              '\u0414\u0430\u0442\u0430'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              '\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              '\u0414-\u0442'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              '\u041A-\u0442'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Currency'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Rate'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Exchange'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Amount'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              '$0.00'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'th',
-              null,
-              'Comment'
-            ),
-            _react2.default.createElement(
-              'th',
-              null,
-              'Chat'
-            ),
-            _react2.default.createElement(
-              'th',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'tbody',
-          null,
-          _react2.default.createElement(
-            'tr',
-            null,
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '011124'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '25.11.2017'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              'UAH'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.73'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '5890'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-            )
-          ),
-          _react2.default.createElement(
-            'tr',
-            null,
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '011124'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '25.11.2017'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              'UAH'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.73'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '5890'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-            )
-          ),
-          '            ',
-          _react2.default.createElement(
-            'tr',
-            null,
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '011124'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '25.11.2017'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              'UAH'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.73'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '5890'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-            )
-          ),
-          '            ',
-          _react2.default.createElement(
-            'tr',
-            null,
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '011124'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '25.11.2017'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '0.00'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              'UAH'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.73'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '5890'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '26.68'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
-            ),
-            _react2.default.createElement(
-              'td',
-              null,
-              _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
-            )
-          )
-        )
-      )
-    );
-  }
+      function Table(props) {
+          (0, _classCallCheck3.default)(this, Table);
   
-  exports.default = displayTable;
+          var _this = (0, _possibleConstructorReturn3.default)(this, (Table.__proto__ || (0, _getPrototypeOf2.default)(Table)).call(this, props));
+  
+          _this.state = { showModal: false };
+          _this.showModal = _this.showModal.bind(_this);
+          _this.hideModal = _this.hideModal.bind(_this);
+          return _this;
+      }
+  
+      (0, _createClass3.default)(Table, [{
+          key: 'showModal',
+          value: function showModal() {
+              this.setState({ showModal: true });
+          }
+      }, {
+          key: 'hideModal',
+          value: function hideModal() {
+              this.setState({ showModal: false });
+          }
+      }, {
+          key: 'render',
+          value: function render() {
+              var popover = _react2.default.createElement(
+                  _reactBootstrap.Popover,
+                  { id: 'modal-popover', title: 'popover' },
+                  'very popover. such engagement'
+              );
+              var tooltip = _react2.default.createElement(
+                  _reactBootstrap.Tooltip,
+                  { id: 'modal-tooltip' },
+                  'wow.'
+              );
+  
+              return _react2.default.createElement(
+                  'div',
+                  { className: 'wrap' },
+                  _react2.default.createElement(
+                      'div',
+                      { className: 'page-heading' },
+                      _react2.default.createElement(
+                          'h2',
+                          null,
+                          '\u041E\u043F\u0435\u0440\u0430\u0446\u0438\u0438'
+                      ),
+                      _react2.default.createElement(
+                          'a',
+                          { href: '#', className: 'btn btn-primary btn-rounded' },
+                          '\u0412\u0430\u043B\u044E\u0442\u0430: UAH ',
+                          _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+                      ),
+                      _react2.default.createElement(
+                          'button',
+                          { className: 'btn btn-primary btn-rounded',
+                              type: 'button',
+                              onClick: this.showModal },
+                          '\u041D\u043E\u0432\u0430\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u044F +'
+                      ),
+                      _react2.default.createElement(
+                          'form',
+                          null,
+                          _react2.default.createElement('input', { className: 'form-control search-form', placeholder: '\u041F\u043E\u0438\u0441\u043A', type: 'text' }),
+                          _react2.default.createElement(
+                              'button',
+                              { type: 'submit', className: 'search-btn' },
+                              _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
+                          )
+                      )
+                  ),
+                  _react2.default.createElement(
+                      'div',
+                      { className: 'row' },
+                      _react2.default.createElement(
+                          'div',
+                          { className: 'col-md-12' },
+                          _react2.default.createElement(
+                              'div',
+                              { className: 'row options' },
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement('input', { className: 'form-control search-options', type: 'text', placeholder: '\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435' }),
+                                  _react2.default.createElement(
+                                      'button',
+                                      { type: 'submit', className: 'search-btn' },
+                                      _react2.default.createElement('i', { className: 'fa fa-search',
+                                          'aria-hidden': 'true' })
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement('input', { className: 'form-control search-options', type: 'text', placeholder: '\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F' }),
+                                  _react2.default.createElement(
+                                      'button',
+                                      { type: 'submit', className: 'search-btn' },
+                                      _react2.default.createElement('i', { className: 'fa fa-search',
+                                          'aria-hidden': 'true' })
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement(
+                                      'select',
+                                      { className: 'form-control state-select' },
+                                      _react2.default.createElement(
+                                          'option',
+                                          { disabled: true, selected: true },
+                                          '\u0421\u0442\u0430\u0442\u0443\u0441'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '1' },
+                                          '\u041F\u0440\u0438\u043D\u044F\u0442'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '2' },
+                                          '\u0412 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0435'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '3' },
+                                          '\u0417\u0430\u0432\u0435\u0440\u0448\u0435\u043D'
+                                      )
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement('input', { className: 'form-control search-orders', placeholder: 'Order \u2116', type: 'text' }),
+                                  _react2.default.createElement(
+                                      'button',
+                                      { type: 'submit', className: 'search-btn' },
+                                      _react2.default.createElement('i', { className: 'fa fa-search',
+                                          'aria-hidden': 'true' })
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement(
+                                      'select',
+                                      { className: 'form-control date-select' },
+                                      _react2.default.createElement(
+                                          'option',
+                                          { disabled: true, selected: true },
+                                          '\u0414\u0430\u0442\u0430 \u0441'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '1' },
+                                          '01.01'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '2' },
+                                          '01.02'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '3' },
+                                          '01.02'
+                                      )
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement(
+                                      'select',
+                                      { className: 'form-control date-select' },
+                                      _react2.default.createElement(
+                                          'option',
+                                          { disabled: true, selected: true },
+                                          '\u0414\u0430\u0442\u0430 \u043F\u043E'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '1' },
+                                          '01.01'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '2' },
+                                          '01.02'
+                                      ),
+                                      _react2.default.createElement(
+                                          'option',
+                                          { value: '3' },
+                                          '01.02'
+                                      )
+                                  )
+                              )
+                          )
+                      )
+                  ),
+                  _react2.default.createElement(
+                      'table',
+                      { className: 'table table-striped' },
+                      _react2.default.createElement(
+                          'thead',
+                          null,
+                          _react2.default.createElement(
+                              'tr',
+                              null,
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Order \u2116'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  '\u0414\u0430\u0442\u0430'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  '\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  '\u0414-\u0442'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  '\u041A-\u0442'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Currency'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Rate'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Exchange'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Amount'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  '$0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Comment'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  'Chat'
+                              ),
+                              _react2.default.createElement(
+                                  'th',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-plus-circle', 'aria-hidden': 'true' })
+                              )
+                          )
+                      ),
+                      _react2.default.createElement(
+                          'tbody',
+                          null,
+                          _react2.default.createElement(
+                              'tr',
+                              null,
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '011124'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '25.11.2017'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  'UAH'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.73'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '5890'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+                              )
+                          ),
+                          _react2.default.createElement(
+                              'tr',
+                              null,
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '011124'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '25.11.2017'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  'UAH'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.73'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '5890'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+                              )
+                          ),
+                          _react2.default.createElement(
+                              'tr',
+                              null,
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '011124'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '25.11.2017'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  'UAH'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.73'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '5890'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+                              )
+                          ),
+                          _react2.default.createElement(
+                              'tr',
+                              null,
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('input', { id: 'checkBox', type: 'checkbox' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '011124'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '25.11.2017'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u0421\u0442\u0430\u0432\u043B\u044E \u0434\u043E\u043B\u0430\u0440 \u043D\u0430 \u0441\u0432\u043E\u0439 \u0431\u0430\u043B\u0430\u043D\u0441'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '0.00'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  'UAH'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.73'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '5890'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '26.68'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  '\u041A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439'
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-comments-o', 'aria-hidden': 'true' })
+                              ),
+                              _react2.default.createElement(
+                                  'td',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-ellipsis-v', 'aria-hidden': 'true' })
+                              )
+                          )
+                      )
+                  ),
+                  _react2.default.createElement(
+                      _reactBootstrap.Modal,
+                      { show: this.state.showModal, onHide: this.hideModal },
+                      _react2.default.createElement(
+                          _reactBootstrap.Modal.Header,
+                          null,
+                          _react2.default.createElement(
+                              _reactBootstrap.Modal.Title,
+                              null,
+                              _react2.default.createElement(
+                                  'h3',
+                                  null,
+                                  '\u041E\u043F\u0435\u0440\u0430\u0446\u0438\u044F \u2116 131/4 \u043E\u0442 27.19.2017 '
+                              )
+                          ),
+                          _react2.default.createElement(
+                              'span',
+                              { onClick: this.hideModal },
+                              '\u0417\u0430\u043A\u0440\u044B\u0442\u044C'
+                          )
+                      ),
+                      _react2.default.createElement(
+                          _reactBootstrap.Modal.Body,
+                          null,
+                          _react2.default.createElement(
+                              _reactBootstrap.Col,
+                              { md: 6 },
+                              _react2.default.createElement(
+                                  'h4',
+                                  null,
+                                  '\u041D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438:'
+                              ),
+                              _react2.default.createElement(
+                                  _reactBootstrap.ButtonGroup,
+                                  null,
+                                  _react2.default.createElement(
+                                      _reactBootstrap.Button,
+                                      { bsStyle: 'primary' },
+                                      '\u041E\u0442\u0434\u0430\u044E'
+                                  ),
+                                  _react2.default.createElement(
+                                      _reactBootstrap.Button,
+                                      null,
+                                      '\u041F\u043E\u043B\u0443\u0447\u0430\u044E'
+                                  )
+                              ),
+                              _react2.default.createElement(
+                                  'h4',
+                                  null,
+                                  '\u0424\u043E\u0440\u043C\u0430 \u043E\u043F\u043B\u0430\u0442\u044B:'
+                              ),
+                              _react2.default.createElement(
+                                  _reactBootstrap.ButtonGroup,
+                                  null,
+                                  _react2.default.createElement(
+                                      _reactBootstrap.Button,
+                                      null,
+                                      '\u041D\u0430\u043B'
+                                  ),
+                                  _react2.default.createElement(
+                                      _reactBootstrap.Button,
+                                      null,
+                                      '\u0411\u0435\u0437\u043D\u0430\u043B'
+                                  )
+                              )
+                          ),
+                          _react2.default.createElement(
+                              _reactBootstrap.Col,
+                              { md: 6 },
+                              _react2.default.createElement(
+                                  'form',
+                                  null,
+                                  _react2.default.createElement('input', { className: 'form-control ', type: 'text', placeholder: 'A108.8' })
+                              )
+                          )
+                      ),
+                      _react2.default.createElement(
+                          _reactBootstrap.Modal.Footer,
+                          null,
+                          _react2.default.createElement(
+                              _reactBootstrap.Button,
+                              { bsStyle: 'primary' },
+                              _react2.default.createElement('i', { className: 'fa fa-info-circle', 'aria-hidden': 'true' }),
+                              ' \u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u0434\u0430\u0447\u0443 '
+                          ),
+                          _react2.default.createElement(
+                              _reactBootstrap.Button,
+                              { bsStyle: 'primary' },
+                              _react2.default.createElement('i', { className: 'fa fa-envelope-o', 'aria-hidden': 'true' }),
+                              ' \u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u0434\u0430\u0447\u0443 '
+                          )
+                      )
+                  )
+              );
+          }
+      }]);
+      return Table;
+  }(_react2.default.Component);
+  
+  exports.default = Table;
 
 /***/ }),
-/* 156 */
-/***/ (function(module, exports) {
-
-  module.exports = require("react-bootstrap/lib/Pagination");
-
-/***/ }),
+/* 156 */,
 /* 157 */
-/***/ (function(module, exports) {
-
-  module.exports = require("react-bootstrap/lib/PageHeader");
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports) {
-
-  module.exports = require("react-bootstrap/lib/Well");
-
-/***/ }),
-/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -20894,7 +20987,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(160);
+  var _Button = __webpack_require__(158);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -20910,7 +21003,7 @@ module.exports =
   };
 
 /***/ }),
-/* 160 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -20931,7 +21024,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -21470,7 +21563,13 @@ module.exports =
   exports.default = displayButtons;
 
 /***/ }),
-/* 161 */
+/* 159 */
+/***/ (function(module, exports) {
+
+  module.exports = require("react-bootstrap/lib/PageHeader");
+
+/***/ }),
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21483,7 +21582,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _FlotCharts = __webpack_require__(162);
+  var _FlotCharts = __webpack_require__(161);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -21499,7 +21598,7 @@ module.exports =
   };
 
 /***/ }),
-/* 162 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21520,7 +21619,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -21739,7 +21838,7 @@ module.exports =
   exports.default = displayFlotCharts;
 
 /***/ }),
-/* 163 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21752,7 +21851,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _forms = __webpack_require__(164);
+  var _forms = __webpack_require__(163);
   
   var _forms2 = _interopRequireDefault(_forms);
   
@@ -21768,7 +21867,7 @@ module.exports =
   };
 
 /***/ }),
-/* 164 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21783,15 +21882,15 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(38);
   
-  var _FormControlFeedback = __webpack_require__(165);
+  var _FormControlFeedback = __webpack_require__(164);
   
   var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
   
-  var _FormControlStatic = __webpack_require__(166);
+  var _FormControlStatic = __webpack_require__(165);
   
   var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
   
-  var _InputGroupAddon = __webpack_require__(167);
+  var _InputGroupAddon = __webpack_require__(166);
   
   var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
   
@@ -22277,25 +22376,25 @@ module.exports =
   exports.default = displayForms;
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlFeedback");
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlStatic");
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/InputGroupAddon");
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22308,7 +22407,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Grid = __webpack_require__(169);
+  var _Grid = __webpack_require__(168);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
@@ -22324,7 +22423,7 @@ module.exports =
   };
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22341,7 +22440,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -23212,7 +23311,7 @@ module.exports =
   exports.default = displayGrid;
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23225,7 +23324,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Icons = __webpack_require__(171);
+  var _Icons = __webpack_require__(170);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
@@ -23241,7 +23340,7 @@ module.exports =
   };
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23258,7 +23357,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -26340,7 +26439,7 @@ module.exports =
   exports.default = displayIcons;
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26353,7 +26452,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MorrisjsCharts = __webpack_require__(173);
+  var _MorrisjsCharts = __webpack_require__(172);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
@@ -26369,7 +26468,7 @@ module.exports =
   };
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26390,7 +26489,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -26580,7 +26679,7 @@ module.exports =
   exports.default = displayMorrisjsCharts;
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26593,7 +26692,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Notification = __webpack_require__(175);
+  var _Notification = __webpack_require__(174);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
@@ -26609,7 +26708,7 @@ module.exports =
   };
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26646,7 +26745,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Alert = __webpack_require__(176);
+  var _Alert = __webpack_require__(175);
   
   var _Alert2 = _interopRequireDefault(_Alert);
   
@@ -26654,23 +26753,23 @@ module.exports =
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _OverlayTrigger = __webpack_require__(177);
+  var _OverlayTrigger = __webpack_require__(176);
   
   var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
   
-  var _Tooltip = __webpack_require__(178);
+  var _Tooltip = __webpack_require__(177);
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Popover = __webpack_require__(179);
+  var _Popover = __webpack_require__(178);
   
   var _Popover2 = _interopRequireDefault(_Popover);
   
-  var _Modal = __webpack_require__(180);
+  var _Modal = __webpack_require__(179);
   
   var _Modal2 = _interopRequireDefault(_Modal);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -27169,37 +27268,37 @@ module.exports =
   exports.default = Notification;
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Alert");
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/OverlayTrigger");
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Tooltip");
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Popover");
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Modal");
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -27212,7 +27311,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _PanelWells = __webpack_require__(182);
+  var _PanelWells = __webpack_require__(181);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
@@ -27228,7 +27327,7 @@ module.exports =
   };
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -27823,7 +27922,7 @@ module.exports =
   exports.default = displayPanelWells;
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -27836,7 +27935,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Typography = __webpack_require__(184);
+  var _Typography = __webpack_require__(183);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
@@ -27852,7 +27951,7 @@ module.exports =
   };
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -27869,7 +27968,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(157);
+  var _PageHeader = __webpack_require__(159);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -28467,7 +28566,7 @@ module.exports =
   exports.default = displayTypography;
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -28480,7 +28579,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _blank = __webpack_require__(186);
+  var _blank = __webpack_require__(185);
   
   var _blank2 = _interopRequireDefault(_blank);
   
@@ -28495,7 +28594,7 @@ module.exports =
   };
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -28539,7 +28638,7 @@ module.exports =
   exports.default = displayBlank;
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -28588,127 +28687,10 @@ module.exports =
       */
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, exports) {
 
   module.exports = require("./assets");
-
-/***/ }),
-/* 189 */
-/***/ (function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(29);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(30);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(31);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(32);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(33);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(11);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var ModalExample = function (_React$Component) {
-    (0, _inherits3.default)(ModalExample, _React$Component);
-  
-    function ModalExample() {
-      (0, _classCallCheck3.default)(this, ModalExample);
-      return (0, _possibleConstructorReturn3.default)(this, (ModalExample.__proto__ || (0, _getPrototypeOf2.default)(ModalExample)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(ModalExample, [{
-      key: 'render',
-      value: function render() {
-        var _this2 = this;
-  
-        var closeModal = function closeModal() {
-          return _this2.setState({ open: false });
-        };
-  
-        var saveAndClose = function saveAndClose() {
-          api.saveData().then(function () {
-            return _this2.setState({ open: false });
-          });
-        };
-  
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'button',
-            { type: 'button' },
-            'Launch modal'
-          ),
-          _react2.default.createElement(
-            Modal,
-            {
-              show: this.state.open,
-              onHide: closeModal,
-              'aria-labelledby': 'ModalHeader'
-            },
-            _react2.default.createElement(
-              Modal.Header,
-              { closeButton: true },
-              _react2.default.createElement(
-                Modal.Title,
-                { id: 'ModalHeader' },
-                'A Title Goes here'
-              )
-            ),
-            _react2.default.createElement(
-              Modal.Body,
-              null,
-              _react2.default.createElement(
-                'p',
-                null,
-                'Some Content here'
-              )
-            ),
-            _react2.default.createElement(
-              Modal.Footer,
-              null,
-              '// If you don\'t have anything fancy to do you can use // the convenient `Dismiss` component, it will // trigger `onHide` when clicked',
-              _react2.default.createElement(
-                Modal.Dismiss,
-                { className: 'btn btn-default' },
-                'Cancel'
-              ),
-              '// Or you can create your own dismiss buttons',
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-primary', onClick: saveAndClose },
-                'Save'
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return ModalExample;
-  }(_react2.default.Component);
-  
-  exports.default = ModalExample;
 
 /***/ })
 /******/ ]);
