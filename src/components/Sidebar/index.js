@@ -12,17 +12,18 @@ class Sidebar extends Component {
       multiLevelDropdownCollapsed: true,
       thirdLevelDropdownCollapsed: true,
       samplePagesCollapsed: true,
+      showModal: false,
     };
   }
 
   render() {
     return (
-      <div className="navbar-default sidebar" style={{ marginLeft: '-20px' }} role="navigation">
+      <div className="navbar-default sidebar-left" role="navigation">
         <div className="sidebar">
-                        <div className="nav-profile">
-                            <img alt="profile" className="rounded-circle margin-b-10 circle-border " src="https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png" width="80"/>
-                            <p className="name">Клиент</p>
-                        </div>
+            <div className="nav-profile">
+            <img alt="profile" className="rounded-circle margin-b-10 circle-border " src="https://verstkaidesign.ru/wp-content/uploads/2017/04/sozdat-avatar-dlya-youtube-sharg.png" width="80"/>
+            <p className="name">Клиент</p>
+            </div>
           <ul className="nav in" id="side-menu">
             <li>
               <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >

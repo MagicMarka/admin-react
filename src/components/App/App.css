@@ -16,8 +16,8 @@ html {
   line-height: 1.375; /* ~22px */
 }
 
-a {
-  color: #0074c2;
+a, a:hover {
+  color: #fff;
 }
 .custom-search-form.search-form {
   border-radius: 20px;

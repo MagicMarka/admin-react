@@ -4,31 +4,34 @@ import Button from 'react-bootstrap/lib/Button';
 import Panel from 'react-bootstrap/lib/Panel';
 import Pagination from 'react-bootstrap/lib/Pagination';
 import PageHeader from 'react-bootstrap/lib/PageHeader';
+import Modal, { Footer, Header, Title, Body } from 'react-bootstrap/lib/Modal';
 import Well from 'react-bootstrap/lib/Well';
-
+import ModalExample from './Modal';
 
 
 function displayTable(props) {
-  
+
   return (
     <div className="wrap">
         <div className="page-heading">
               <h2>Операции</h2>
               <a href="#" className="btn btn-primary btn-rounded">Валюта: UAH <i className="fa fa-ellipsis-v" aria-hidden="true"></i></a>
-              <button className="btn btn-primary btn-rounded" data-toggle="modal" data-target="#Modal">Новая операция + </button>
+              <button className="btn btn-primary btn-rounded"  type="button" data-toggle="modal" data-target="#exampleModal">Новая операция + </button>
                 <form>
                     <input className="form-control search-form" placeholder="Поиск" type="text"/><button type="submit" className="search-btn"><i className="fa fa-search" aria-hidden="true"></i></button>
                 </form>
         </div>
+<ModalExample />
+
       <div className="row">
         <div className="col-md-12">
             <div className="row options">
               <form>
-                <input className="form-control search-options" type="text" className="form-control" placeholder="Описание"/>
+                <input className="form-control search-options" type="text" placeholder="Описание"/>
                 <button type="submit" className="search-btn"><i className="fa fa-search" aria-hidden="true"></i></button>
               </form>
               <form>
-                <input className="form-control search-options" type="text" className="form-control" placeholder="Компания" />
+                <input className="form-control search-options" type="text" placeholder="Компания" />
                 <button type="submit" className="search-btn"><i className="fa fa-search" aria-hidden="true"></i></button>
               </form>       
               <form>

@@ -19,8 +19,9 @@ body {
   padding-bottom: 10px;
   margin: 0;
   background: transparent;
-  padding-left: 20px;
+  padding: 20px 0;
   background: transparent;
+    border-bottom: 1px solid #ddd;
 }
 .page-heading :last-child {
   margin-left: auto;
@@ -38,7 +39,13 @@ body {
   background: #272727;
   z-index: 99; 
 }
-
+.sidebar-left {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: #333;
+}
+}
 .nav-profile {
   display: flex;
   justify-content: space-around;
@@ -227,11 +234,11 @@ form {
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid #e7e7e7;
+    color: #fff;
 }
 
-.sidebar ul li a.active {
-    background-color: #eee;
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background-color: #337ab7;;
 }
 
 .sidebar .arrow {
